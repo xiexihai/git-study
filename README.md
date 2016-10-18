@@ -22,9 +22,9 @@
 
 ###步骤
 
->第一步git add 文件名 使用命令 git add 添加到暂存区里面去
+>第一步 git add 文件名 使用命令 git add 添加到暂存区里面去
 
->第二步、git commit -m "这里填写注释" 用命令 git commit 告诉Git，把文件提交到仓库
+>第二步 git commit -m "这里填写注释" 用命令 git commit 告诉Git，把文件提交到仓库
 
 >git status 通过命令git status来查看是否还有文件未提交
 
@@ -40,11 +40,11 @@
 
 >git log –pretty=oneline
 
-###现在我想使用版本回退操作，我想把当前的版本回退到上一个版本，要使用什么命令呢？可以使用如下2种命令，
+###现在我想使用版本回退操作，我想把当前的版本回退到上一个版本，要使用什么命令呢？可以使用如下2种命令
 
 >第一种是： git reset –hard HEAD^ 那么如果要回退到上上个版本只需把HEAD^ 改成 HEAD^^ 以此类推。
 
->那如果要回退到前100个版本的话，使用上面的方法肯定不方便，我们可以使用下面的简便命令操作：
+>那如果要回退到前100个版本的话，使用上面的方法肯定不方便，我们可以使用下面的简便命令操作
 
 >git reset –hard HEAD~100 即可。
 
@@ -56,34 +56,48 @@
 
 >git reset –hard 版本号=>回复到该版本号
 
-###我们前面说过使用Git提交文件到版本库有两步：
+###我们前面说过使用Git提交文件到版本库有两步
 
 >第一步：是使用 git add 把文件添加进去，实际上就是把文件添加到暂存区。
 
 >第二步：使用git commit提交更改，实际上就是把暂存区的所有内容提交到当前分支上。
 
 ###撤销修改
+
 >命令 git checkout –- 文件名
 
 ###删除文件
+
 >rm 文件名
 
 ###提交到远端仓库
+
 >git push origin master
 
 >把本地master分支的最新修改推送到github上了
 
 >git clone 地址
+
 >git checkout -b dev 创建并切换分支
+
 >git branch 查看当前分支
+
 >git merge dev 在master分支上合并dev分支内容
+
 >git branch -d dev 删除dev分支
+
 >git branch 查看分支的命令
 
-###总结创建与合并分支命令如下：
+###总结创建与合并分支命令如下
+
 >查看分支：git branch
+
 >创建分支：git branch name
+
 >切换分支：git checkout name
+
 >创建+切换分支：git checkout –b name
+
 >合并某分支到当前分支：git merge name
+
 >删除分支：git branch –d name
