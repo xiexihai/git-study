@@ -1,6 +1,4 @@
-# git-study
-
-##初学git用到的一些比较常用的命令
+#初学git用到的一些比较常用的命令
 
 ###git全局配置 
 
@@ -24,9 +22,9 @@
 
 ###步骤
 
-* 第一步git add 文件名 使用命令 git add 添加到暂存区里面去
+>第一步git add 文件名 使用命令 git add 添加到暂存区里面去
 
-* 第二步、git commit -m "这里填写注释" 用命令 git commit 告诉Git，把文件提交到仓库
+>第二步、git commit -m "这里填写注释" 用命令 git commit 告诉Git，把文件提交到仓库
 
 >git status 通过命令git status来查看是否还有文件未提交
 
@@ -70,6 +68,7 @@
 ###删除文件
 >rm 文件名
 
+###提交到远端仓库
 >git push origin master
 
 >把本地master分支的最新修改推送到github上了
