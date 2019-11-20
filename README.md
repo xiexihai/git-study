@@ -105,3 +105,10 @@
 >合并某分支到当前分支：git merge name
 
 >删除分支：git branch –d name
+
+>查看当前详细分支信息（可看到当前分支与对应的远程追踪分支）：git branch -vv
+
+>重命名本地分支并切换到新命名的分支：git branch -m dev1 dev2 (把本地分支dev1重命名dev2，并且切换到dev2)
+
+>把本地分支提交到远程指定分支：git push orign dev1:dev2 (把本地dev1分支提交到远程dev2分支，如果远程没有dev2则创建dev2分支) 
+
